@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Code Helper",
+  "version": "1.0",
+  "description": "Code autofill, optimization, complexity analysis and problem suggestions for LeetCode.",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["https://leetcode.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
