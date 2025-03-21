@@ -1,4 +1,4 @@
-const GEMINI_API_KEY = 'AIzaSyAk9uS-JMX8fYUubjyLD_773c3TYy9WTYw';
+const GEMINI_API_KEY = 'YOUR_API_KEY';
 
 function waitForEditorAndRun(callback) {
   const interval = setInterval(() => {
